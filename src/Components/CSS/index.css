@@ -18,7 +18,7 @@
         position: fixed;
         z-index: 2;
         display: flex;
-        height: 100px;
+        height: 75px;
         width: 100%;
         background: #1b1b1b;
         align-items: center;
@@ -140,99 +140,12 @@
         color: #333;
     }
     
-    h2 {
-        padding: 20px;
-    }
+    
     
     section {
         min-height: 100vh;
     }
-    
-    .card-video {
-        position: relative;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-wrap: wrap;
-        margin: 100px 0;
-    }
-    
-    .card-video:nth-child(odd) {
-        flex-direction: row;
-    }
-    
-    .card-video:nth-child(even) {
-        flex-direction: row-reverse;
-        text-align: right;
-    }
-    
-    .card-video:nth-child(even) .imgBx {
-        left: -25px;
-    }
-    
-    .card-video:nth-child(even) .contentBx {
-        right: -25px;
-        padding: 20px 100px 20px 60px;
-    }
-    
-    .card-video .imgBx {
-        position: relative;
-        left: 25px;
-        width: 700px;
-        height: 500px;
-        z-index: 1;
-    }
-    
-    .card-video .imgBx video {
-        position: absolute;
-        top: 0;
-        left: 0;
-        height: 100%;
-        width: 100%;
-        -o-object-fit: cover;
-        object-fit: cover;
-    }
-    
-    .card-video .contentBx {
-        position: relative;
-        right: 25px;
-        width: 700px;
-        height: 500px;
-        background: #000;
-        color: #fff;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        padding: 20px 60px 20px 100px;
-    }
-    
-    .card-video .contentBx:before {
-        content: "";
-        position: absolute;
-        top: -50px;
-        bottom: -50px;
-        left: 0;
-        right: 0;
-        background: #000;
-        z-index: -1;
-    }
-    
-    .card-video .content h2 {
-        font-size: 1.5em;
-    }
-    
-    .card-video .content p {
-        margin-top: 10px;
-    }
-    
-    .card-video .content a {
-        display: inline-block;
-        margin-top: 15px;
-        color: #fff;
-        text-decoration: none;
-        padding: 10px;
-        border: 1px solid #fff;
-    }
+
     
     .wrapper {
         min-height: 100vh;
@@ -306,7 +219,7 @@
         align-items: stretch;
     }
     
-    .card {
+    .card-index {
         font-family: "Quattrocento", Arial, sans-serif;
         position: relative;
         overflow: hidden;
@@ -321,18 +234,18 @@
         font-size: 16px;
     }
     
-    .card * {
+    .card-index * {
         box-sizing: border-box;
     }
     
-    .card img {
+    .card-index img {
         max-width: 100%;
         vertical-align: top;
         border-top-left-radius: 20px;
         border-top-right-radius: 20px;
     }
     
-    .card figcaption {
+    .card-index figcaption {
         width: 100%;
         background-color: #ffffff;
         padding: 15px 25px 65px;
@@ -341,7 +254,7 @@
         border-bottom-left-radius: 20px;
     }
     
-    .card figcaption:before {
+    .card-index figcaption:before {
         position: absolute;
         content: "";
         bottom: 100%;
@@ -351,7 +264,7 @@
         background-image: linear-gradient(to bottom, transparent 0%, #ffffff 100%);
     }
     
-    .card h2 {
+    .card-index h2 {
         margin: 0 0 10px;
         font-weight: 300;
         font-size: 1.5em;
@@ -360,7 +273,7 @@
         text-transform: uppercase;
     }
     
-    .card p {
+    .card-index p {
         margin: 0 0 10px;
         font-size: 0.9em;
         letter-spacing: 1px;
@@ -368,7 +281,7 @@
         font-weight: bold;
     }
     
-    .card .icons {
+    .card-index .icons {
         position: absolute;
         bottom: 0;
         left: 0;
@@ -381,7 +294,7 @@
         border-bottom-left-radius: 20px;
     }
     
-    .card i {
+    .card-index i {
         padding: 10px 5px;
         display: inline-block;
         font-size: 24px;

@@ -1,6 +1,6 @@
 import React from 'react';
-import './css/index.css'
-import image from '../Assets/Js/Image';
+import './CSS/index.css'
+import image from '../Assets/Js/image';
 import { Link } from "react-router-dom";
 
 class Index extends React.Component{
@@ -33,7 +33,7 @@ class Index extends React.Component{
         </header>
         <section>
           <div className="card-container">
-            <figure className="card">
+            <figure className="card-index">
               <img src={image.Rasyid} alt="u" />
               <figcaption>
                 <h2>Muhammad <br /> Rasyid Ridho</h2>
@@ -46,7 +46,7 @@ class Index extends React.Component{
                 </div>
               </figcaption>
             </figure>
-            <figure className="card">
+            <figure className="card-index">
               <img src={image.Zidane} alt="i" />
               <figcaption>
                 <h2>Muhammad <br /> Zidane Fajarianto</h2>
@@ -59,7 +59,7 @@ class Index extends React.Component{
                 </div>
               </figcaption>
             </figure>
-            <figure className="card">
+            <figure className="card-index">
               <img src={image.Nabila} alt="o" />
               <figcaption>
                 <h2>Nabila <br /> Farahana</h2>
@@ -72,7 +72,7 @@ class Index extends React.Component{
                 </div>
               </figcaption>
             </figure>
-            <figure className="card">
+            <figure className="card-index">
               <img src={image.Novita} alt="p" />
               <figcaption>
                 <h2>Novita <br /> Azka Maghfira</h2>

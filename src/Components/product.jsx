@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import './CSS/product.css'
 import { Link } from 'react-router-dom';
 
-function Home() {
+function Product() {
     const [error, setError] = useState(null);
     const [isLoaded, setIsLoaded] = useState(false);
     const [items, setItems] = useState([]);
@@ -76,13 +76,13 @@ function Home() {
  
     </label>
         <ul>
-          <li><Link to="/">Index</Link></li>
+          <li><Link to="/">Index</Link></li> 
           <li><Link to="product">Product</Link></li>
         </ul>
     
   </nav>
             </div>
-            <div className="wrapper">
+            <div className="wrappertop">
                 <div className="search-wrapper">
                     <label htmlFor="search-form">
                         <input
@@ -156,4 +156,4 @@ function Home() {
     }
 }
 
-export default Home;
+export default Product;
