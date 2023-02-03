@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
-import './CSS/Home.css'
+import './CSS/product.css'
+import { Link } from 'react-router-dom';
 
 function Home() {
     const [error, setError] = useState(null);
@@ -74,6 +75,10 @@ function Home() {
     <label htmlFor="click" className="menu-btn">
  
     </label>
+        <ul>
+          <li><Link to="/">Index</Link></li>
+          <li><Link to="product">Product</Link></li>
+        </ul>
     
   </nav>
             </div>
