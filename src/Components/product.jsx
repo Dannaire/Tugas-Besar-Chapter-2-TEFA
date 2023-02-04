@@ -13,7 +13,7 @@ function Product() {
 
     useEffect(() => {
         fetch(
-            "https://s3.us-west-2.amazonaws.com/secure.notion-static.com/1f2898db-ceb4-4565-a1eb-2d3beb8a509c/product.json?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20230203%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20230203T015913Z&X-Amz-Expires=86400&X-Amz-Signature=84bf0abf885e24f089492646a871ff8b8987b82c8ffa6a022b122a1dcb8a1665&X-Amz-SignedHeaders=host&x-id=GetObject"
+            "https://s3.us-west-2.amazonaws.com/secure.notion-static.com/1f2898db-ceb4-4565-a1eb-2d3beb8a509c/product.json?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20230204%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20230204T070238Z&X-Amz-Expires=86400&X-Amz-Signature=f947b372f279cb6509effa7fa1f28a29b07e70254b2c043d67114dd9d799b611&X-Amz-SignedHeaders=host&x-id=GetObject"
         )
             .then((res) => res.json())
             .then(
@@ -66,18 +66,20 @@ function Product() {
         return (
             
             <div className="home">
+                 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
                 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
             <div className="w">
             <nav>
     <div className="logo">
    Kelompok 5
     </div>
-    <label htmlFor="click" className="menu-btn">
- 
-    </label>
+    <input type="checkbox" id="click" />
+        <label htmlFor="click" className="menu-btn">
+          <i className="fas fa-bars" />
+        </label>
         <ul>
-          <li><Link to="/">Index</Link></li> 
-          <li><Link to="product">Product</Link></li>
+          <li><Link to="/">Home</Link></li> 
+          <li><Link to="/Product">Product</Link></li>
         </ul>
     
   </nav>

@@ -17,23 +17,77 @@
   --border: rgba(0, 0, 0, 0.1);
 }
 nav {
-  position: absolute;
+  cursor: pointer;
+  position: fixed;
   z-index: 2;
   display: flex;
   height: 75px;
   width: 100%;
-  background: #cbb9ab;
+  background: #1b1b1b;
   align-items: center;
   justify-content: space-between;
   padding: 0 50px 0 100px;
   flex-wrap: wrap;
 }
+
 nav .logo {
-  color: rgb(250, 245, 245);
+  color: #fff;
   font-size: 35px;
   font-weight: 600;
-  cursor: pointer;
+}
 
+nav ul {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+}
+
+nav ul li {
+  margin: 0 5px;
+}
+
+nav ul li a {
+  color: #f2f2f2;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: 500;
+  padding: 8px 15px;
+  border-radius: 5px;
+  letter-spacing: 1px;
+  transition: all 0.3s ease;
+}
+
+nav ul li a:hover {
+  color: #111;
+  background: #fff;
+}
+
+nav ul li a.active {
+  color: #111;
+  background: #fff;
+}
+
+nav .menu-btn i {
+  color: #fff;
+  font-size: 22px;
+  cursor: pointer;
+  display: none;
+}
+
+input[type=checkbox] {
+  display: none;
+}
+
+#click:checked~.menu-btn i:before {
+  content: "\f00d";
+}
+
+#click:checked~ul {
+  left: 0;
+}
+
+#click:checked~ul li a {
+  margin-left: 0px;
 }
 
 .sr-only {
